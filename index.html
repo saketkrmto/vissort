@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sorting Visualizer</h1>
+  <div id="controls">
+    <div class="control-group">
+      <input id="userInput" type="text" placeholder="e.g., 50, -30, 70" size="30">
+      <button onclick="setArray()">Set</button>
+      <button onclick="randomizeArray()">Randomize</button>
+      <button onclick="resetArray()">Reset</button>
+    </div>
+    <div class="control-group">
+      <select id="algo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+      <button onclick="startSort()">Play</button>
+      <button onclick="pauseSort()">Pause</button>
+      <button onclick="stepSort()">Step</button>
+    </div>
+    <div class="control-group">
+      <label for="speed">Speed:</label>
+      <input type="range" id="speed" min="10" max="1000" value="300">
+    </div>
+  </div>
+
+  <div id="bars-wrapper">
+    <div id="bars"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
